@@ -131,7 +131,7 @@
 						</li>
 						<li class="standout">3 frameworks
 							<ul>
-								<li><img src="images/taffyLogo-small.png">&nbsp;&nbsp;&nbsp;<img src="images/ColdBoxLogoSquare_125.png">&nbsp;&nbsp;&nbsp;<img src="images/fw1Logo-150.png"></li>
+								<li><img src="images/taffyLogo-small.png">&nbsp;&nbsp;&nbsp;<img src="images/ColdBoxLogoSquare_125.png">&nbsp;&nbsp;&nbsp;<img src="images/fw1.png"></li>
 							</ul>
 						</li>
 					</ul>
@@ -158,12 +158,7 @@
 				<h4 class="gold"><img src="images/acf-logo.jpg"> routing</h4>
 				<p>{domain}/rest/{serviceMapping}/{subResource}</p>
 				<p>Example:</p>
-				<p class="gold">superfootball.local/rest/fantasyFootball/getQuarterbacks</p>
-				<!-- <ul  style="list-style-type:circle" class="gray">
-					<li><span class="gold">superfootball.com/rest/</span> = a rest call for superfootball.com</li>
-					<li><span class="gold">fantasyFootball</span> = Application name/serviceMapping we selected</li>
-					<li><span class="gold">getQuarterbacks</span> = subResource/CFC function set to respond</li>
-				</ul> -->
+				<p class="gold">{domain}/rest/fantasyFootball/getQuarterbacks</p>
 			</div>
 
 			<div class="step 17" data-x="4000" data-y="-4000" data-rotate="-90">
@@ -244,7 +239,7 @@
 
 			<div class="step 25" data-x="-4000" data-y="4000" data-rotate="360" data-z="2000">
 				<h5 class="gold"><img src="images/taffyLogo-small.png"> Setup/Configuration</h5>
-				<ul style="list-style-type:circle">
+				<ul style="list-style-type:circle" class="gray">
 					<li>Download from
 						<ul>
 							<li>Taffy.io</li>
@@ -252,17 +247,17 @@
 						</ul>
 					</li>
 					<li>Unzip into web root (preferred) or API subfolder</li>
-					<li>CFC attribute: extends="taffy.core.api"</li>
+					<li>Application CFC attribute: extends="taffy.core.api"</li>
 				</ul>
 			</div>
 
 			<div class="step 26" data-x="-6000" data-y="4000" data-rotate="360">
 				<h4 class="gold"><img src="images/taffyLogo-small.png"> routing</h4>
-				<p><pre>
-cfcomponent extends="taffy.core.resource" taffy:uri="/players" {
-	//cfc code
+				<pre>
+<span class="gold">component extends</span><span class="standout">=</span><span class="green">"taffy.core.resource"</span> <span class="gold">taffy:uri</span><span class="standout">=</span><span class="green">"/players"</span> {
+	<span class="gray">//cfc code</span>
 }
-				</pre></p>
+				</pre>
 				<p>taffy:uri/taffy_uri attribute determines route connection</p>
 				<p>url: {domain}/api/{players}</p>
 			</div>
@@ -274,7 +269,7 @@ cfcomponent extends="taffy.core.resource" taffy:uri="/players" {
 
 			<div class="step 28" data-x="-6000" data-y="0" data-rotate="360">
 				<h5 class="gold"><img src="images/taffyLogo-small.png"> Considerations</h5>
-				<ul style="list-style-type:circle">
+				<ul style="list-style-type:circle" class="gray">
 					<li>Simple implementation</li>
 					<li>Diverse: CF8+ (& corr. Railo)</li>
 					<li>Well documented</li>
@@ -285,7 +280,7 @@ cfcomponent extends="taffy.core.resource" taffy:uri="/players" {
 
 			<div class="step 29" data-x="-6000" data-y="-2000" data-rotate="360" data-z="2000">
 				<img src="images/ColdBoxLogoSquare_125.png">
-				<ul style="list-style-type:circle">
+				<ul style="list-style-type:circle" class="gray">
 					<li>Enterprise application framework</li>
 					<li>conventions based</li>
 					<li>diverse and extensible</li>
@@ -295,10 +290,10 @@ cfcomponent extends="taffy.core.resource" taffy:uri="/players" {
 
 			<div class="step 30" data-x="-6000" data-y="-4000" data-rotate="360">
 				<h6 class="gold"><img src="images/ColdBoxLogoSquare_125.png"> Setup/Configuration</h6>
-				<ul style="list-style-type:circle">
-					<li>Preferred: CommandBox workflow
+				<ul style="list-style-type:circle" class="gray">
+					<li>Preferred workflow: <img src="images/commandbox-150-logo.png">
 						<ul>
-							<li>made directory for you app</li>
+							<li>made directory for your app</li>
 							<li>install ColdBox & preferred app skeleton</li>
 							<li>install RELAX module</li>
 						</ul>
@@ -389,9 +384,9 @@ cfcomponent extends="taffy.core.resource" taffy:uri="/players" {
 			</div>
 
 			<div class="step 40" data-x="6000" data-y="2000" data-rotate="360">
-				<h4 class="itb">Caveats (warning image here)</h4>
+				<h4 class="itb"><img src="images/Warning.png" style="padding-left:200px"></h4>
 				<ul style="list-style-type:circle">
-					<li>REST is not a fancy or a gimic</li>
+					<li>REST is not afancy or a gimic</li>
 					<li>Take security seriously</li>
 					<li>Make your API robust</li>
 					<li>get Creative!!!</li>
