@@ -13,16 +13,6 @@ component output="false" hint="superfootball Module Configuration" {
 	this.entryPoint			= "API";
 
 	function configure() {
-		// Layout Settings
-		layoutSettings = {
-			defaultLayout = ""
-		};
-
-		// datasources
-		datasources = {};
-
-		// web services
-		webservices = {};
 
 		// SES Routes
 		routes = [
@@ -35,31 +25,8 @@ component output="false" hint="superfootball Module Configuration" {
 			{pattern="/:handler/:action?"}
 		];
 
-		// Custom Declared Points
-		interceptorSettings = {
-			customInterceptionPoints = ""
-		};
-
-		// Custom Declared Interceptors
-		interceptors = [
-			// security
-		];
-
-		// Binder Mappings
-		// binder.map("Alias").to("#moduleMapping#.model.MyService");
 	}
 
-
-	//Executed whenever the various environment are detected
-	function local(){}
-
-
-	//Fired when the module is registered and activated.
-	function onLoad(){}
-
-
-	//Fired when the module is unregistered and unloaded
-	function onUnload(){}
 
 
 }
