@@ -20,7 +20,7 @@ component extends="modules.API.handlers.v1.APIBaseHandler" singleton {
 		param name="rc.conference" default="";
 		param name="rc.division" default="";
 
-		var teams = //return a list of teams that match conference and division (both optional)
+		var teams = teamService.list(); //return a list of teams that match conference and division (both optional)
 
 		event.renderData(type="json",data=teams);
 	}
@@ -30,7 +30,7 @@ component extends="modules.API.handlers.v1.APIBaseHandler" singleton {
 	function getTeam(event,rc,prc) {
 		param name="rc.teamID" default=0;
 
-		var team = //obtain a team w/the associated teamID
+		var team = teamService.get(rc.teamID); //obtain a team w/the associated teamID
 
 		event.renderData(type="json",data=team);
 	}
