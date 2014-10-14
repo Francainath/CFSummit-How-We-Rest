@@ -13,7 +13,7 @@ component {
 		param name="rc.division" default="";
 		param name="rc.conference" default="";
 
-		var kickers = //get a list of kickers, optional team, division, or conference affiliation
+		var kickers = kickerService.list(); //get a list of kickers, optional team, division, or conference affiliation
 
 		variables.fw.renderData( 'json', kickers, statusCode=200 );
 	}
@@ -23,7 +23,7 @@ component {
 	public void function getKicker( struct rc ) {
 		param name="rc.kickerID" default=0;
 
-		var kicker = //get a kicker w/the kickerID
+		var kicker = kickerService.get(rc.kickerID); //get a kicker w/the kickerID
 
 		variables.fw.renderData( 'json', kicker, statusCode=200 );
 	}
