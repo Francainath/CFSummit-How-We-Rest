@@ -1,4 +1,4 @@
-component extends="taffy.core.api" taffy_uri="/widereceiver/{widereceiverID}" {
+component extends="taffy.core.resource" taffy_uri="/widereceiver/{widereceiverID}" {
 
 
 	//get()
