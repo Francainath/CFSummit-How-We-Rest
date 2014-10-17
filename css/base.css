@@ -132,7 +132,7 @@ h6 {
 .step {
 	position: relative;
 	width: 900px;
-	padding: 40px;
+	/*padding: 40px;*/
 	margin: 20px auto;
 
 	-webkit-box-sizing: border-box;

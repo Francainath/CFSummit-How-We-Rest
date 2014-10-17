@@ -155,15 +155,16 @@
 			</div>
 
 			<div class="step 16" data-x="2000" data-y="-4000">
-				<h4 class="gold"><img src="images/acf-logo.jpg"> routing</h4>
-				<p>{domain}/rest/{serviceMapping}/{subResource}</p>
-				<p>Example:</p>
+				<h4 class="gold"><img src="images/acf-logo.jpg"> Routing</h4>
+				<p class="gray">{domain}/rest/{serviceMapping}/{subResource}</p>
+				<p class="gray">Example:</p>
 				<p class="gold">{domain}<span class="standout">/rest</span>/fantasyFootball/getQuarterback/{id}</p>
 			</div>
 
 			<div class="step 17" data-x="4000" data-y="-4000" data-rotate="-90">
 				<h4 class="gold"><img src="images/acf-logo.jpg"> CFC code</h4>
 				<h3 class="standout">SHOW TIME!!!</h3>
+				<p class="gray">(examples/CF10quarterback.cfc<br>in github repo)</p>
 			</div>
 
 			<div class="step 18" data-x="4000" data-y="-1500">
@@ -197,17 +198,19 @@
 			<div class="step 20" data-x="4000" data-y="2000">
 				<h5 class="gold"><img src="images/railoLogo-small.png"> Setup/Configuration</h5>
 				<img src="images/railo-config.png">
+				<p><span class="gold dwarf">RestInitApplication(rootPath[,serviceMapping[,options]])</span><br><span class="gray">(in application.cfc)</span> </p>
 			</div>
 
 			<div class="step 21" data-x="4000" data-y="4000" data-z="2000">
-				<h4 class="gold"><img src="images/railoLogo-small.png"> routing</h4>
-				<p>{domain}/rest/{service}/{action}</p>
+				<h4 class="gold"><img src="images/railoLogo-small.png"> Routing</h4>
+				<p class="gray">{domain}/rest/{service}/{action}</p>
 				<p class="gold">{domain}/rest/fantasyFootball/getRunningback/{id}</p>
 			</div>
 
 			<div class="step 22" data-x="2000" data-y="4000">
 				<h4 class="gold"><img src="images/railoLogo-small.png"> CFC code</h4>
 				<h3 class="standout">SHOW TIME!!!</h3>
+				<p class="gray">(examples/RailoRunningBack.cfc<br>in github repo)</p>
 			</div>
 
 			<div class="step 23" data-x="0" data-y="4000" data-z="-2000">
@@ -229,7 +232,7 @@
 
 			<div class="step 24" data-x="-2000" data-y="4000">
 				<img src="images/taffyLogo.png">
-				<ul style="list-style-type:circle">
+				<ul style="list-style-type:circle" class="gray">
 					<li>REST focused framework</li>
 					<li>Design: make REST simple for CF</li>
 					<li>works as far back as CF8</li>
@@ -252,19 +255,20 @@
 			</div>
 
 			<div class="step 26" data-x="-6000" data-y="4000" data-rotate="360">
-				<h4 class="gold"><img src="images/taffyLogo-small.png"> routing</h4>
+				<h4 class="gold"><img src="images/taffyLogo-small.png"> Routing</h4>
 				<pre>
 <span class="gold">component extends</span><span class="standout">=</span><span class="green">"taffy.core.resource"</span> <span class="gold">taffy:uri</span><span class="standout">=</span><span class="green">"/players"</span> {
 	<span class="gray">//cfc code</span>
 }
 				</pre>
-				<p>taffy:uri/taffy_uri attribute determines route connection</p>
-				<p>url: {domain}/api/{players}</p>
+				<p class="gray">taffy:uri/taffy_uri attribute determines route connection</p>
+				<p class="gold">url: {domain}/api/{players}</p>
 			</div>
 
 			<div class="step 27" data-x="-6000" data-y="2000" data-rotate="360" data-z="-2000">
 				<h4 class="gold"><img src="images/taffyLogo-small.png"> CFC code</h4>
 				<h3 class="standout">SHOW TIME!!!</h3>
+				<p class="gray">(examples/taffyApplication.cfc and<br>examples/taffyWideReceiver.cfc<br>in github repo)</p>
 			</div>
 
 			<div class="step 28" data-x="-6000" data-y="0" data-rotate="360">
@@ -304,13 +308,15 @@
 			</div>
 
 			<div class="step 31" data-x="-6000" data-y="-6000" data-rotate="360" data-z="-2000">
-				<h4 class="gold"><img src="images/ColdBoxLogoSquare_125.png"> routing</h4>
+				<h4 class="gold"><img src="images/ColdBoxLogoSquare_125.png"> Routing</h4>
 				<h3 class="standout">SHOW TIME!!!</h3>
+				<p class="gray">(examples/ColdBoxModuleConfig.cfc<br>in github repo)</p>
 			</div>
 
 			<div class="step 32" data-x="-4000" data-y="-6000" data-rotate="90">
 				<h4 class="gold"><img src="images/ColdBoxLogoSquare_125.png"> CFC code</h4>
 				<h3 class="standout">SHOW TIME!!!</h3>
+				<p class="gray">(examples/ColdBoxTeam.cfc<br>in github repo)</p>
 			</div>
 
 			<div class="step 33" data-x="-2000" data-y="-6000" data-rotate="180" data-z="2000">
@@ -351,13 +357,15 @@
 			</div>
 
 			<div class="step 36" data-x="4000" data-y="-6000" data-rotate="360">
-				<h4 class="gold"><img src="images/fw1.png"> routing</h4>
+				<h4 class="gold"><img src="images/fw1.png"> Routing</h4>
 				<h3 class="standout">SHOW TIME!!!</h3>
+				<p class="gray">(examples/FW1Application.cfc<br>in github repo)</p>
 			</div>
 
 			<div class="step 38" data-x="6000" data-y="-4000" data-rotate="360" data-z="2000">
 				<h4 class="gold"><img src="images/fw1.png"> CFC code example</h4>
 				<h3 class="standout">SHOW TIME!!!</h3>
+				<p class="gray">(examples/FW1kicker.cfc<br>in github repo)</p>
 			</div>
 
 			<div class="step 39" data-x="6000" data-y="-2000" data-rotate="360">
