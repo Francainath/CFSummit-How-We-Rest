@@ -43,7 +43,7 @@ component extends="modules.API.handlers.v1.APIBaseHandler" singleton {
 		param name="rc.conference" default="";
 		param name="rc.division" default="";
 
-		//save team with this name, divisino, and conference, new if teamID = 0
+		//save team with this name, division, and conference, new if teamID = 0
 
 		//on success
 		var data = {

@@ -2,7 +2,7 @@
 
 
 	<!--- getQuarterback() --->
-	<cffunction name="getQuarterback" access="remote" returntype="quarterback" restpath="{quarterbackID}">
+	<cffunction name="getQuarterback" access="remote" returntype="quarterback" restpath="{quarterbackID}" httpmethod="GET">
 		<cfargument name="quarterbackID" type="numeric" required="yes" restargsource="Path"/>
 			<!--- hitting superfootball.local/rest/quarterback/{quarterbackID} w/the GET http method will: --->
 			<!--- Get a QB w/this ID and return it --->
@@ -34,7 +34,7 @@
 
 
 	<!--- deleteQuarterback() --->
-	<cffunction name="deleteQuarterback" access="remote" returntype="string" restpath="{quarterbackID}">
+	<cffunction name="deleteQuarterback" access="remote" returntype="string" restpath="{quarterbackID}" httpmethod="DELETE">
 		<cfargument name="quarterbackID" type="numeric" required="yes" restargsource="Path"/>
 			<!--- hitting superfootball.local/rest/quarterback/{quarterbackID} w/the DELETE http method will: --->
 			<!--- Delete the QB with this quarterbackID from the DB --->
